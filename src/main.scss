@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/cut1zzs.css");
+@import "..//src/sass/variable.scss";
+
 
 * {
     margin: 0;
@@ -10,24 +12,30 @@
     
 }
 
-.navbar-brand{
-    font-size: 1.9rem ! important;
-    color: #565387 !important;
+.navbar {
+       background-color: #fff;
+    .navbar-brand{
+        font-size: 1.9rem ! important;
+        color: $brand-clr !important;
+    }
+    
+    & a {
+       font-size: 1.3rem;
+       text-transform: capitalize;
+    }
+    
+    & a:hover {
+        color: #3498db !important;
+    }
+
+    .active {
+        font-weight: bold;
+        border-bottom: 1px solid $brand-clr ;
+   } 
+
 }
 
-.navbar a {
-   font-size: 1.3rem;
-   text-transform: capitalize;
-}
 
-.navbar a:hover {
-    color: #3498db !important;
-}
-
-.active {
-     font-weight: bold;
-     border-bottom: 1px solid #565387 ;
-} 
 
  .navbar-brand.active { 
     font-weight: normal;

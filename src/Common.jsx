@@ -14,7 +14,7 @@ const Common = (props) => {
                              <h2 className='my-3' > We are the team of talented developer </h2>
                              <div className='mt-3' >
                             <NavLink to={props.visit} className="btn btn-outline-primary" > {props.btname} </NavLink>
-                             </div>
+                             </div>  
                           </div>
                           <div className='col-lg-6 order-1 order-lg-2 header-img ' > 
                             <img src={props.imgsrc} className='img-fluid' alt='home img' />
@@ -29,3 +29,4 @@ const Common = (props) => {
 
 }
 export default Common;
+
